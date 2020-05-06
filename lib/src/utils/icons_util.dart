@@ -6,7 +6,8 @@ final _iconos = <String, IconData>{
   'folder_open'   : Icons.folder_open,
   'arrow_right'   : Icons.arrow_right,
   'blur_linear'   : Icons.blur_linear,
-  'widgets'       : Icons.widgets
+  'widgets'       : Icons.widgets,
+  'swap_horizontal_circle'        : Icons.swap_horizontal_circle
 };
 
 

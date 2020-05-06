@@ -104,11 +104,12 @@ class _FormularioPageState extends State<FormularioPage> {
         padding: const EdgeInsets.all(8.0),
         child: Row(
           children: <Widget>[
-            FlutterLogo( size: 100.0 ),
+            FlutterLogo( size: 90.0 ),
             Column(
+              mainAxisSize: MainAxisSize.max,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              Text('$_nombre'),
+              Text('$_nombre',),
               Text('$_mail'),
               SizedBox(height: 40.0,),
               Text('$_dropdownOptSelected'),

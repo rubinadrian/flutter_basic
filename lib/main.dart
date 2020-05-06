@@ -5,6 +5,7 @@ import 'package:lista/src/pages/animaciones_page.dart';
 import 'package:lista/src/pages/avatars_page.dart';
 import 'package:lista/src/pages/formulario_page.dart';
 import 'package:lista/src/pages/home_page.dart';
+import 'package:lista/src/pages/slider_page.dart';
 import 'package:lista/src/pages/tarjetas_page.dart';
 
 void main() => runApp(MyApp());
@@ -36,6 +37,7 @@ class MyApp extends StatelessWidget {
         'card'          : ( BuildContext context ) => TarjetasPage(),
         'animaciones'   : ( BuildContext context ) => AnimacionesPage(),
         'formulario'    : ( BuildContext context ) => FormularioPage(),
+        'slider'        : ( BuildContext context ) => SliderPage(),
       },
       initialRoute: '/',
       onGenerateRoute: (RouteSettings setting ){

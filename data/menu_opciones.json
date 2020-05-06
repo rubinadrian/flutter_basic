@@ -25,6 +25,11 @@
             "ruta" : "formulario",
             "icon" : "widgets",
             "texto": "Formulario"
+        },
+        {
+            "ruta" : "slider",
+            "icon" : "swap_horizontal_circle",
+            "texto": "Slider"
         }
     ]
 }
