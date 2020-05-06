@@ -7,7 +7,8 @@ final _iconos = <String, IconData>{
   'arrow_right'   : Icons.arrow_right,
   'blur_linear'   : Icons.blur_linear,
   'widgets'       : Icons.widgets,
-  'swap_horizontal_circle'        : Icons.swap_horizontal_circle
+  'swap_horizontal_circle'        : Icons.swap_horizontal_circle,
+  'list'          : Icons.list
 };
 
 

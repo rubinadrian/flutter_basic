@@ -11,6 +11,7 @@ class SliderPage extends StatefulWidget {
 class _SliderPageState extends State<SliderPage> {
 
   double _valueSlider = 100.0;
+  bool _enabled = true;
 
   final _imagenes = [
     'https://pngimg.com/uploads/captain_america/captain_america_PNG50.png',
@@ -33,11 +34,14 @@ class _SliderPageState extends State<SliderPage> {
            padding: EdgeInsets.only(top: 20.0),
            child: Column(
              children: [ 
+               _crearCheckbox(),
+              _crearSwitch(),
                Slider(
                   value: _valueSlider,
                   min: 50,
-                  max: 350,
-                  onChanged: (newValue){
+                  max: 250,
+                  label: 'Tamaño de la imagen',
+                  onChanged: (_enabled==false)?null:(newValue){
                     setState(() {
                       _valueSlider = newValue;
                     });
@@ -53,5 +57,32 @@ class _SliderPageState extends State<SliderPage> {
          ),
     );
   }
+
+
+  Widget _crearCheckbox() {
+
+    return CheckboxListTile(
+      title: Text('Permite cambiar tamaño'),
+      value: _enabled,
+      onChanged: (value){ 
+        setState(() {
+          _enabled = value;
+        });
+      });
+  }
+
+  Widget _crearSwitch() {
+
+    return SwitchListTile(
+      title: Text('Permite cambiar tamaño'),
+      value: _enabled,
+      onChanged: (value){ 
+        setState(() {
+          _enabled = value;
+        });
+      });
+  }
+
+
 }
 
